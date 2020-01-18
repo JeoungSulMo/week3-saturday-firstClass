@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="width: 500px;margin: auto;">
+        <h1>{{ article.title }}</h1>
+        <br/>
+        <p>
+            <span>{{ article.author }}  </span>
+            <span>{{ article.created_at}}</span>
+        </p>
+        <h3>{{ article.content }}</h3>
+        <p><a href="{% url 'core:articlelist' %}">리스트</a></p>
+    </div>
+</body>
+</html>

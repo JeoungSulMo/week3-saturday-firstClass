@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="width: 400px;margin: auto">
+        <h3>리스트입니다<h3>
+            <div>
+                {% for article in articles %}
+                <div>
+                    <p>제목 :
+                        <a href="{% url 'core:articledetail' article.pk %}">
+                        {{ article }}</a>
+                    </p>
+
+
+                </div>
+
+                {% endfor %}
+            </div>
+    </div>
+</body>
+</html>
